@@ -65,7 +65,8 @@
     background-color: #fffefe(202, 32, 32);
     /* position: relative; */
     /* z-index: -1; */
-}
+    box-shadow: -1px 3px 10px #535151;
+    }
 
 
 .nav ul{
@@ -95,22 +96,51 @@ justify-content: center;
     text-align: center;
     padding: 2vw;
     width: 5vw;
-    height: 2.5vh;
+    height: 1.5vh;
     background: linear-gradient(to top, #fffefe, #beacac 85%, #eee 96%, #4a4949 103%);
-        border-radius: 4.5px;
     border-left: 1px solid black;
     border-top: 1px solid black;
     border-right: 1px solid black;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
     /* position: absolute; */
     z-index: 20;
     transform: translate(0vw,6vh);
-
-}
+    overflow: hidden;
+    font-size: 2vw;
+    font-family: 'Apple Garamond', sans-serif;
+    
+  }
 
 
 ::selection {
     background: rgb(41, 87, 104);
   }
+
+  .smallLine000{
+    width: 100vw;
+  height: 3px;
+  background-color: rgb(223, 218, 218);
+  position: absolute;
+  transform: translate(0vw,5vh);}
+  
+  .smallLine0000{
+    width: 100vw;
+  height: 3px;
+  background-color: rgb(223, 218, 218);
+  position: absolute;
+  transform: translate(0vw,4vh);
+}
+
+
+#appleLogo{
+  width: 71px;
+  height: 92px;
+  fill: blue;
+  filter:invert(100%);
+  transform: translate(0vw,-2vh);
+}
+
 
 
   .smallLine00{
@@ -248,4 +278,19 @@ h1 {
     transform: translate(0vw,0vh);
     filter: contrast(90%);
     border-top-left-radius: 16px;
+}
+
+.bottomRight{
+  width: 37vw;
+  height: 28vh;
+  background-color: #f1f1f1;
+  transform: translate(29vw,-20.2vh);
+  border-bottom-right-radius: 16px
+}
+
+.bottomRight img{
+  width: 37vw;
+  height: 28vh;
+  border-bottom-right-radius: 16px
+
 }
