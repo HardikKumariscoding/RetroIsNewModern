@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Retro ;-)</title>
 </head>
+
 <body>
     <nav class="nav">
-        <ul >
+        <ul>
             <h1 class="extraline">
                 <h2 class="smallLine0000"></h2>
                 <h2 class="smallLine000"></h2>
@@ -22,51 +24,83 @@
                 <h2 class="smallLine6"></h2>
                 <h2 class="smallLine7"></h2>
             </h1>
-            <li><img  id="appleLogo"  src="Apple_logo_black.svg.png"></li>
+            <li id="appleBTN"><img id="appleLogo" src="Apple_logo_black.svg.png"></li>
             <li>about</li>
             <li>new</li>
             <li>contact</li>
         </ul>
     </nav>
-<div class="container">
-    <div class="apple-g3">
+    <div class="container">
+        <div class="apple-g3">
 
-        <div class="macContainer">
-            <img src="whoa-350-imac.jpg"  id="mac350">
-            <p>Think different</p>
-            
+            <div class="macContainer">
+                <img src="whoa-350-imac.jpg" id="mac350">
+                <p>Think different</p>
 
-            <div class="bottomRight">
-                <img src="buy_now.jpg">
+
+                <div class="bottomRight">
+                    <img src="buy_now.jpg">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container2" id="container2">
+        <div class="safariStatusBar">
+
+            <div class="topThreeButton">
+                <button id="redbtn"></button>
+                <button id="yellowbtn"></button>
+                <button onclick="greenClick()" id="greenbtn"></button>
+            </div>
+            <div class="forwardBackward">
+                <button id="backward">
+                    < </button>
+                        <button id="forward"> > </button>
+            </div>
+
+            <div class="smallBigfont">
+                <button id="smallfont">A </button>
+                <button id="bigfont"> A </button>
+            </div>
+
+            <div class="newTab&searchbar">
+                <button id="plus">+</button>
+                <input type="text" id="urlfield" placeholder="https://www.apple.com" readonly="true">
 
             </div>
+
         </div>
+
         
+
+       <div class="safaricontainer">
+        
+       </div> 
+    
+
+
     </div>
-</div>
+    <div class="pixelCursor">
+        <img src="pixel-cursor-real.png">
+        <br>
+        drag this window! 
+      </div>
 
-
-<div class="container2" id="container2">
-<div class="safariStatusBar">
-
-    <div class="topThreeButton">
-        <button id="redbtn"></button>
-        <button id="yellowbtn"></button>
-        <button  onclick="greenClick()"   id="greenbtn"></button>
-    </div>
-<div class="forwardBackward">
-    <!-- <button>back</button>
-    <button>forward</button> -->
-</div>
+      
 
 
 
-</div>
-</div>
+
+
 
 
 </body>
 
 <link rel="stylesheet" href="style.css">
 <script src="script.js"></script>
+
 </html>

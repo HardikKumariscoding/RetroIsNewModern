@@ -5,13 +5,63 @@ let redbtn = document.getElementById('redbtn');
 
 let safariContainer = document.getElementById('container2');
 
+const pixelCursor = document.querySelector(".pixelCursor");
 
 redbtn.onclick = function(){
     safariContainer.style.display="none";
+    pixelCursor.style.display="none";
+
 }
 
 
-/*TO make safari move*/ 
+// console.log(pixelCursor);
+
+
+let appleLogo = document.getElementById("appleBTN");
+
+console.log(appleLogo)
+appleLogo.addEventListener('click',function(){
+    if(safariContainer.style.display == "none" && pixelCursor.style.display == "none")
+    safariContainer.style.display = "block"
+    pixelCursor.style.display="block"
+})
+
+
+
+let safariclone = safariContainer.cloneNode(true);
+
+let plusTabbtn = document.getElementById('plus');
+
+
+let i = 6;
+let newTab = document.createElement('div');
+newTab.id = 'temp';
+document.body.appendChild(newTab);
+plusTabbtn.addEventListener('click',function(){
+
+
+if(newTab.childNodes.length < 6){
+    newTab.appendChild(safariclone)
+    safariclone.setAttribute('style',`transform:translate(${i}vw,0vh)`);
+    safariclone.setAttribute('class',`safariclone`)
+}
+
+safariclone.childNodes[0]
+
+let safariStatusClone = safariclone.childNodes[1];
+let redBtnClone = safariStatusClone.childNodes[1].childNodes[1];
+
+redBtnClone.addEventListener('click',function(){
+safariclone.remove();
+})
+
+
+},false)
+
+
+
+
+/*TO make safari move----------------------*/ 
 
 let mousePosition;
 let offset = [0,0];
