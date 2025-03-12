@@ -4,7 +4,7 @@ A Tribute website to apple's old webdesign, also me trying to replicate that des
 
 ## Demo
 
-![.GIF](./assets/retro.gif)
+![GIF](./assets/retro.gif)
 
 
 
