@@ -4,12 +4,18 @@ A Tribute website to apple's old webdesign, also me trying to replicate that des
 
 ## Demo
 
-![HomePage](./assets/ss1.PNG)
+![.GIF](./assets/retro.gif)
+
+
+
+## HOME
+![HOME](./assets/ss1.PNG)
 
 
 ## SAFARI WINDOW (MOVABLE AND Closeable)
 
 ![Safari](./assets/ss2.PNG)
+
 
 
 ## Features
